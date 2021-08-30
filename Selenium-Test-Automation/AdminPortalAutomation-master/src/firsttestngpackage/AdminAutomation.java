@@ -15,8 +15,8 @@ import org.testng.annotations.*;
 
 public class AdminAutomation {
 	public String baseUrl = "http://localhost:4201";
-    //String driverPath = "C:\\Users\\Nagaraj\\Downloads\\firefoxDriver\\geckodriver.exe";
-   String driverPath = "D:\\geckodriver\\geckodriver.exe";
+    //String driverPath = "E:\\geckodriver.exe";
+   String driverPath = "E:\\geckodriver.exe";
     public WebDriver driver ; 
      
   @BeforeTest
@@ -32,8 +32,8 @@ public class AdminAutomation {
 
 @Test(priority=0) public void login_Pass() { 
 		 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		 driver.findElement(By.name("inputUserName")).sendKeys("madhuri");
-		  driver.findElement(By.name("password")).sendKeys("mad12345");
+		 driver.findElement(By.name("inputUserName")).sendKeys("admin");
+		  driver.findElement(By.name("password")).sendKeys("admin1234");
 		  //Login Button
 		  driver.findElement(By.xpath("/html/body/app-root/app-login/div/form/button")).click();
 		  String actualUrl="http://localhost:4200/user-account";
@@ -96,8 +96,8 @@ public class AdminAutomation {
  
   @Test(priority=6) public void login_Fail() { 
 		 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		 driver.findElement(By.name("inputUserName")).sendKeys("madhuri");
-		  driver.findElement(By.name("password")).sendKeys("mad");
+		 driver.findElement(By.name("inputUserName")).sendKeys("admin");
+		  driver.findElement(By.name("password")).sendKeys("admin");
 		  //Login Button
 		  driver.findElement(By.xpath("/html/body/app-root/app-login/div/form/button")).click();
 		  Alert alert = driver.switchTo().alert();
