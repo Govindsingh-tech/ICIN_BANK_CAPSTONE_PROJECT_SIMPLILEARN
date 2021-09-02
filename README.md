@@ -17,4 +17,3 @@
 - Automation and testing technologies	: Selenium, Jasmine, and TestNG
 - DevOps and production technologies	: Git, GitHub, Jenkins, Docker, Kubernetes, and AWS
 - Methodology	: Agile Scrum Methodology
-- Sprint required	: 4 sprints of 7 days each
