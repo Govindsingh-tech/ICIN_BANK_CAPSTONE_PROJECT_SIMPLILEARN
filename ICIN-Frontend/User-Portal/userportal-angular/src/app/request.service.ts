@@ -7,7 +7,7 @@ import {ChequebookResponse} from './_models/chequebookresponse'
 })
 export class RequestService {
 
-  readonly rootUrl = 'http://localhost:8092';
+  readonly rootUrl = 'https://icinbankapp-env.eba-x3z9wunv.us-east-1.elasticbeanstalk.com';
 
   constructor(private http: HttpClient) { }
 

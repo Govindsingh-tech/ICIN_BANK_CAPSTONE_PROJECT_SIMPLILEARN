@@ -11,7 +11,7 @@ export class UserService {
   private url:string;
 
   constructor(private http:HttpClient) {
-    this.url="http://localhost:8092"
+    this.url="https://icinbankapp-env.eba-x3z9wunv.us-east-1.elasticbeanstalk.com"
    }
    public getUser(username):Observable<UserDisplay>{
     return this.http.get<UserDisplay>(this.url+"/home/"+username);
