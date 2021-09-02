@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class LoginService {
-  readonly rootUrl = 'https://icinbankapp-env.eba-x3z9wunv.us-east-1.elasticbeanstalk.com';
+  ROOT_URL:String = 'https://springbootaws-env.eba-n54pmm54.us-east-1.elasticbeanstalk.com';
 
   constructor(private http: HttpClient) { }
 
@@ -14,6 +14,6 @@ export class LoginService {
       username: userName,
       password: password
     }
-    return this.http.post(this.rootUrl + '/login', body);
+    return this.http.post(this.ROOT_URL + '/login', body);
   }
 }

@@ -7,7 +7,7 @@ import {ChequebookResponse} from './_models/chequebookresponse'
 })
 export class RequestService {
 
-  readonly rootUrl = 'https://icinbankapp-env.eba-x3z9wunv.us-east-1.elasticbeanstalk.com';
+  ROOT_URL:String = 'https://springbootaws-env.eba-n54pmm54.us-east-1.elasticbeanstalk.com';
 
   constructor(private http: HttpClient) { }
 
@@ -17,6 +17,6 @@ export class RequestService {
       no_of_pages: pages, 
     }
     console.log(body);
-    return this.http.post<ChequebookResponse>(this.rootUrl + '/cheque/request', body);
+    return this.http.post<ChequebookResponse>(this.ROOT_URL + '/cheque/request', body);
   }
 }

@@ -11,7 +11,7 @@ export class TransferhistoryService {
   private url:String;
 
   constructor(private http:HttpClient) {
-    this.url="https://icinbankapp-env.eba-x3z9wunv.us-east-1.elasticbeanstalk.com"
+    this.url="https://springbootaws-env.eba-n54pmm54.us-east-1.elasticbeanstalk.com"
    }
    public getTransferHistory(accNo):Observable<TransferHistory[]>{
     return this.http.get<TransferHistory[]>(this.url+"/account/getTransfers/"+accNo);

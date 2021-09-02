@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class TransferService {
 
-    readonly rootUrl = 'https://icinbankapp-env.eba-x3z9wunv.us-east-1.elasticbeanstalk.com';
+    ROOT_URL:String = 'https://springbootaws-env.eba-n54pmm54.us-east-1.elasticbeanstalk.com';
   
     constructor(private http: HttpClient) { }
   
@@ -19,7 +19,7 @@ export class TransferService {
         amount:amount
       }
       console.log(body);
-      return this.http.post(this.rootUrl + '/account/transfer', body);
+      return this.http.post(this.ROOT_URL + '/account/transfer', body);
     }
   }
   

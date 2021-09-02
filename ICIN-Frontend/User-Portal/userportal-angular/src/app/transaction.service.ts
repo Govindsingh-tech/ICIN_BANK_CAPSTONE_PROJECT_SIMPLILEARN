@@ -12,7 +12,7 @@ export class TransactionService {
   private url:String;
 
   constructor(private http:HttpClient) {
-    this.url="https://icinbankapp-env.eba-x3z9wunv.us-east-1.elasticbeanstalk.com"
+    this.url="https://springbootaws-env.eba-n54pmm54.us-east-1.elasticbeanstalk.com"
    }
    public getTransactions(accNo):Observable<Transaction[]>{
     return this.http.get<Transaction[]>(this.url+"/account/getHistory/"+accNo);

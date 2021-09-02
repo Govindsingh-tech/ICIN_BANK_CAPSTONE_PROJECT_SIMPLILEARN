@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-08-31T22:36:17 IST" name="Suite" finished-at="2021-08-31T22:36:51 IST" duration-ms="33425">
+    <groups>
+    </groups>
+    <test started-at="2021-08-31T22:36:17 IST" name="Test" finished-at="2021-08-31T22:36:51 IST" duration-ms="33425">
+      <class name="TestNg.LoginTest">
+        <test-method signature="TestCase1()[pri:0, instance:TestNg.LoginTest@59af0466]" started-at="2021-08-31T22:36:17 IST" name="TestCase1" finished-at="2021-08-31T22:36:51 IST" duration-ms="33359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase1 -->
+      </class> <!-- TestNg.LoginTest -->
+      <class name="TestNg.TestNgClass">
+        <test-method signature="LoanTest()[pri:0, instance:TestNg.TestNgClass@355ce81c]" started-at="2021-08-31T22:36:17 IST" name="LoanTest" finished-at="2021-08-31T22:36:17 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoanTest -->
+      </class> <!-- TestNg.TestNgClass -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

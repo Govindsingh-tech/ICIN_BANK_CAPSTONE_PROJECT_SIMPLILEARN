@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class RegisterService {
 
-  readonly rootUrl = 'https://icinbankapp-env.eba-x3z9wunv.us-east-1.elasticbeanstalk.com';
+  ROOT_URL:String = 'https://springbootaws-env.eba-n54pmm54.us-east-1.elasticbeanstalk.com';
 
   constructor(private http: HttpClient) { }
 
@@ -23,6 +23,6 @@ export class RegisterService {
       identity:identity,
       email : email,
     }
-    return this.http.post(this.rootUrl + '/register', body);
+    return this.http.post(this.ROOT_URL + '/register', body);
   }
 }

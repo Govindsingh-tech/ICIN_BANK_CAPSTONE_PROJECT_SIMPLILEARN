@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class UpdateService {
 
 
-  readonly rootUrl = 'https://icinbankapp-env.eba-x3z9wunv.us-east-1.elasticbeanstalk.com';
+  ROOT_URL:String = 'https://springbootaws-env.eba-n54pmm54.us-east-1.elasticbeanstalk.com';
 
   constructor(private http: HttpClient) { }
 
@@ -21,6 +21,6 @@ export class UpdateService {
       newpassword:newpassword
     }
     console.log(body);
-    return this.http.put(this.rootUrl + '/profile/update', body);
+    return this.http.put(this.ROOT_URL + '/profile/update', body);
   }
 }
